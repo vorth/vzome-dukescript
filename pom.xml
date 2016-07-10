@@ -17,7 +17,7 @@
     <properties>
         <net.java.html.version>1.3</net.java.html.version>
         <bck2brwsr.version>0.19</bck2brwsr.version>
-        <bck2brwsr.obfuscationlevel>MINIMAL</bck2brwsr.obfuscationlevel>
+        <bck2brwsr.obfuscationlevel>NONE</bck2brwsr.obfuscationlevel>
         <junit.browser.version>0.8</junit.browser.version>
         <jersey.version>2.13</jersey.version>
         <enforcer.fail>false</enforcer.fail>

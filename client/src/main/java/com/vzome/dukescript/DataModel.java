@@ -4,6 +4,9 @@ import net.java.html.json.ComputedProperty;
 import net.java.html.json.Function;
 import net.java.html.json.Model;
 import net.java.html.json.Property;
+
+import com.vzome.core.algebra.AlgebraicField;
+import com.vzome.core.algebra.PentagonField;
 import com.vzome.dukescript.js.Dialogs;
 
 /** Model annotation generates class Data with
@@ -48,9 +51,13 @@ final class DataModel {
     }
 
     @Function static void showScreenSize(Data model) {
-        model.setMessage(Dialogs.screenSize());
+//        model.setMessage(Dialogs.screenSize());
+    	model .setMessage( field .createPower( 5 ) .toString() );
     }
     private static Data ui;
+    
+    private static AlgebraicField field;
+    
     /**
      * Called when the page is ready.
      */
@@ -58,5 +65,7 @@ final class DataModel {
         ui = new Data();
         ui.setMessage("Hello World from HTML and Java!");
         ui.applyBindings();
+        
+        field = new PentagonField();
     }
 }

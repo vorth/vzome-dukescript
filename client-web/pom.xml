@@ -83,7 +83,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <obfuscation>${bck2brwsr.obfuscationlevel}</obfuscation>
+                    <obfuscation>NONE</obfuscation>
                     <directory>${project.build.directory}/${project.build.finalName}-bck2brwsr/public_html/</directory>
                     <startpage>index.html</startpage>
                     <classPathPrefix>lib</classPathPrefix>
@@ -186,6 +186,14 @@
             <scope>provided</scope>
             <type>jar</type>
         </dependency>
+<!-- 
+        <dependency>
+            <groupId>java3d</groupId>
+            <artifactId>vecmath</artifactId>
+            <version>1.6.0-jdk7</version>
+            <scope>runtime</scope>
+        </dependency>
+ -->
     </dependencies>
     <profiles>
         <profile>
